@@ -65,13 +65,10 @@
   border-bottom: 1px solid #ccc; }
   #theia-post-slider-post-options > ul > li {
     display: inline; }
-    #theia-post-slider-post-options > ul > li.ui-state-active a {
-      margin-bottom: -1px;
-      padding-bottom: 7px;
-      color: #464646;
-      background-color: #fff; }
+    #theia-post-slider-post-options > ul > li a {
+      transition: none !important; }
+    #theia-post-slider-post-options > ul > li a.nav-tab-active {
+      background-color: #fff;
+      border-bottom-color: #fff; }
 #theia-post-slider-post-options > div {
   display: none; }
-#theia-post-slider-post-options label {
-  width: 200px;
-  display: inline-block; }

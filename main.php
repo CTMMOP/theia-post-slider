@@ -5,7 +5,7 @@ Plugin URI: http://wecodepixels.com/theia-post-slider-for-wordpress/?utm_source=
 Description: Display multi-page posts using a slider, as a slideshow.
 Author: WeCodePixels
 Author URI: http://wecodepixels.com/?utm_source=theia-post-slider-for-wordpress
-Version: 1.9.14
+Version: 1.9.15
 Copyright: WeCodePixels
 */
 
@@ -17,7 +17,7 @@ Copyright: WeCodePixels
  * Plugin version. Used to forcefully invalidate CSS and JavaScript caches by appending the version number to the
  * filename (e.g. "style.css?ver=TPS_VERSION").
  */
-define( 'TPS_VERSION', '1.9.14' );
+define( 'TPS_VERSION', '1.9.15' );
 
 // Include other files.
 include( dirname( __FILE__ ) . '/TpsMisc.php' );

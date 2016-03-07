@@ -71,9 +71,27 @@ class TpsPostOptions {
 		</div>
 		<script>
 			(function ($) {
-				$(document).ready(function () {
-					$('#theia-post-slider-post-options').tabs();
+				var e = $('#theia-post-slider-post-options');
+
+				e.find('> ul > li > a').click(function() {
+					var clickedTab = $(this);
+
+					// Add active class.
+					$(this).addClass('nav-tab-active');
+					e.find('> ul > li > a').each(function() {
+						if (this != clickedTab[0]) {
+							$(this).removeClass('nav-tab-active');
+						}
+					});
+
+					// Show tab.
+					e.children('div').hide();
+					e.children($(this).attr('href')).show();
+
+					return false;
 				});
+
+				e.find('> ul > li > a').eq(0).click();
 			})(jQuery);
 		</script>
 		<?php
